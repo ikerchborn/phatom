@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende y desacarga</title>
+    <link rel="icon" href="hacke.png">
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+    <nav>
+        <a href="index.html">
+            <p>&lt;&lt; Volver</p>
+        </a>
+    </nav>
+    <h1>Aprender a Descargar Metaspoit </h1>
+    <div id="first-div">
+        <img src="metasplot2.jpg    " alt="">
+    </div>
+    <section class="section2">
+        <div class="diro">
+            <h2>¿Que necesitaremos para instalar Metasploitable 3?</h2>
+            <dl>
+                <dt>
+                    Oracle MV Virtual Box
+                </dt>
+                <dt>
+                    Vagrant
+                </dt>
+            </dl>
+            <h2>Pasos</h2>
+            <p>1. Primero debemos descargar Vagrant y virtual Box desde su pagina oficial para nuestro sistema operativo
+                y aceptar todos los permisos que te piden para una instalacion correcta</p>
+            <img class="secofn" src="vagrant.jpg" alt="">
+            <img class="secofn" src="./img-recusos/virtual-box.jpg" alt="">
+            <p>2. Una vez instalados ambos tendremos que inicar sesion en <b>Github</b> y buscamos el apartado
+                rapi7/metasploitable 3 y buscar la forma de instalacion para usuarios de Windows
+            </p>
+            <br>
+            <br>
+            <button type="button" class="botoncito"><a id="meta" href="https://github.com/rapid7/metasploitable3/tree/master" target="_blank"><b>Link Metasploit</b></a>
+            </button> <br>
+            <br>
+            <br>
+            <p>
+                Metasploitable3 es una máquina virtual que se creó desde cero con una gran cantidad de vulnerabilidades
+                de seguridad. Está pensada para usarse como objetivo para probar vulnerabilidades con metasploit.
+
+                Metasploitable3 se publica bajo una licencia de estilo BSD. Consulte COPIA para obtener más detalles.
+            </p>
+            
+        <div id="codigo">
+            <pre>
+                <code>
+mkdir metasploitable3-workspace <br>
+cd metasploitable3-workspace<br>
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/rapid7/metasploitable3/master/Vagrantfile" <br>
+-OutFile "Vagrantfile"<br>
+vagrant up 
+               </code>
+            </pre>
+        </div>
+        
+        <p>Luego de eso tardara un aproximado de 15 a 20 minutos para terminar el proceso de creado de las maquinas virtuales tanto como la de Windows como la de Ubuntu 
+        </p>
+        <img class="secofn" src="maquinas.png" alt="">
+        <p>3. Al finalizar este proceso, procederemos a entrar a Oracle Virtual Box y ya deberian estar ambas creadas, entraremos primero a la maquina virtual de Ubuntu que al iniciarla nos pedira logiarnos con un usuario y contraseña que sera la misma ¨vagrant¨ 
+        </p>
+        <img class="secofn" src="linux-metasploit.png" alt="">
+        <p>4. Una vez iniciado sesion tendremos que hacer un ¨sudo apt-get update¨ y luego un ¨sudo apt-get upgrade¨ para la actualizacion de listas de paquetes y directorios 
+        </p>
+        <p>
+            5. Para la maquina virtual de Windows tambien nos pedira iniciar sesion en cualquiera de los dos Usuarios ya sea en Administrador o en Vagrant la contraseña seguira siendo la misma ¨vagrant¨</p>
+        </div>
+        <div>
+        <img src="login-window.png" alt="">
+        <img src="metasplot-windows.png" alt="">
+        </div>
+    </section>
+</body>
+
+</html>

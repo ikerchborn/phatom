@@ -1,0 +1,191 @@
+/* Agregamos lo que son nuevas fuentes */
+@font-face {
+    font-family: 'Geist-Black';
+    src: url('./fonts/Geist-Black.otf')
+}
+
+@font-face {
+    font-family: 'Geist-Regular';
+    src: url('./fonts/Geist-Regular.otf')
+}
+
+body {
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: Geist-Regular;
+    text-align: center;
+}
+
+main {
+    text-align: center;
+    font-family: Geist-Regular;
+    margin-bottom: 5%;
+}
+
+header {
+    font-size: 150%;
+}
+
+.section {
+    background-color: rgba(0, 255, 255, 0.133);
+    width: 70%;
+    height: auto;
+    text-align: center;
+    margin-left: 15%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 5%;
+    padding-top: 2%;
+    margin-top: 5%;
+}
+@media(max-width:1024px){
+.section img{ width: 50%;}}
+
+.diro p,
+h2,
+h3,
+h4,
+h5 {
+    text-align: justify;
+    margin-top: 4%;
+}
+
+.diro p {
+    text-align: justify;
+    margin-top: 0%;
+    padding-right: 2%;
+}
+
+img {
+    border-radius: 5px;
+}
+
+.h {
+    width: 50%;
+    background-color: rgb(98, 65, 25);
+    border-radius: 5px;
+    margin-left: 25%;
+    box-sizing: border-box;
+    margin-top: 2%;
+    padding: 2%;
+    height: 15rem;
+}
+
+.h ol a li:first-child {
+    padding-top: 1%;
+}
+
+.h li {
+    text-align: left;
+    padding-top: 10%;
+}
+
+.h a {
+
+    text-decoration: none;
+    color: aliceblue;
+    width: 50%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:first-child {
+    color: rgba(255, 255, 255, 0.667);
+}
+
+a p {
+    padding-top: 1.5%;
+}
+
+/*CODIGO PARA EL SEGUNDO HTML*/
+#first-div {
+    width: 40%;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin-left: 30%;
+
+    overflow: hidden;
+}
+
+#first-div img {
+    width: 100%;
+    align-items: center;
+    transition: 0.4s;
+    padding-right: 45%;
+}
+
+#first-div img:hover {
+    transform: scale(1.1);
+
+}
+
+.section2 {
+    background-color: rgba(96, 90, 67, 0.229);
+    width: 70%;
+    height: auto;
+    text-align: center;
+    margin-left: 15%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 5%;
+    padding-top: 2%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.section2 dl {
+    text-align: start;
+}
+
+.section2 img {
+    width: 25rem;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    flex-wrap: nowrap;
+    margin-left: 2%;
+}
+
+#meta {
+    text-align: left;
+}
+.botoncito{
+    padding: 3%;
+    background-color:rgba(0, 139, 139, 0.437) ;
+    border-radius: 5px;
+    box-shadow: 1px;
+}
+
+#codigo {
+    width: 95%;
+}
+
+pre {
+    margin-left: 15%;
+    background-color: rgba(75, 75, 75, 0.23);
+    width: 76%;
+    height: 13.5rem;
+    text-align: justify;
+    padding-top: 1%;
+    white-space:pre ;
+    overflow-x: auto;
+    padding-left: 2%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    flex-shrink: 0;
+    max-width: 100%;
+    border: 1px solid rgba(245, 245, 245, 0.294);
+}
+@media(max-width:1024px) {
+    .section2 img{
+        width: 70%;
+    }
+}
