@@ -1,0 +1,77 @@
+Comandos basicos de Nmap 
+
+1. Escaneo TCP SYN (nmap -sS <IP>)
+Función: Realiza un escaneo sigiloso (stealth) enviando paquetes SYN. 
+Se considera menos detectable porque no completa la conexión TCP. Se usa para 
+identificar puertos abiertos en un host.
+
+2. Escaneo TCP CONNECT (nmap -sT <IP>)
+Función: Establece una conexión TCP completa con el objetivo, lo que puede
+ ser más fácil de detectar. Se utiliza para verificar puertos abiertos y cerrados.
+
+3. Escanear un Rango de IPs (nmap <IP_inicial>-<IP_final>)
+Función: Permite escanear múltiples direcciones IP en un rango específico.
+Útil para identificar hosts activos dentro de una red.
+
+4. Cargar Lista de IPs desde un Archivo (nmap -iL <archivo.txt>)
+Función: Permite especificar un archivo que contenga una lista de direcciones IP
+a escanear. Facilita el escaneo de múltiples objetivos sin tener que escribir
+cada IP manualmente.
+
+5. Escanear un Puerto en Específico (nmap -p <puerto> <IP>)
+Función: Se utiliza para verificar el estado de un puerto específico en un host. Ayuda a 
+identificar si un servicio en particular está en ejecución.
+
+6. Escanear un Rango de Puertos (nmap -p <puerto_inicial>-<puerto_final> <IP>)
+Función: Permite escanear un rango de puertos en un host. Es útil para identificar
+servicios en un conjunto específico de puertos.
+
+7. Escanear 100 Puertos Más Comunes (nmap --top-ports 100 <IP>)
+Función: Realiza un escaneo de los 100 puertos más comunes, que son frecuentemente 
+utilizados por servicios conocidos. Es una forma rápida de obtener información sobre 
+servicios habituales.
+
+8. Escanear Todos los Puertos (nmap -p- <IP>)
+Función: Escanea todos los 65535 puertos en un host. Proporciona información 
+exhaustiva sobre los servicios disponibles, pero puede ser más lento y detectado fácilmente.
+
+9. Detección de Servicios y Versiones (nmap -sV <IP>)
+Función: Identifica los servicios en ejecución en los puertos abiertos y sus versiones. Esto permite 
+conocer qué software está corriendo, lo que puede ayudar en la evaluación de vulnerabilidades.
+
+10. Detección de Sistema Operativo (nmap -O <IP>)
+Función: Intenta identificar el sistema operativo que está ejecutando el host objetivo. Se basa en la 
+respuesta a ciertos paquetes y características de red, útil para determinar la plataforma de un dispositivo.
+
+
+
+
+
+¿Que es John the Ripper?
+John The Ripper es una herramienta de código abierto que viene instalada por defecto en el sistema operativo 
+Kali Linux y que sirve para descifrar contraseñas de usuarios a partir de sus códigos hash. 
+Fue creada por Solar Designer y podría decirles que es una de las herramientas para romper contraseñas de más 
+alto desempeño y flexibles que existen en la actualidad.
+
+Modos de funcionamiento de John The Ripper
+
+-Single crack:
+En el modo Single Crack, John The Ripper genera combinaciones basadas en el nombre de usuario y su hash para 
+compararlo con el hash de la contraseña. Este método es efectivo, ya que muchas personas 
+utilizan su nombre de usuario o variaciones como contraseña. 
+
+-Diccionario:
+Utiliza una lista de palabras predeterminadas, como el famoso RockYou.txt, para intentar crackear contraseñas. 
+También se pueden crear listas personalizadas a partir de bases de datos filtradas.
+
+-Incremental:
+Realiza ataques por fuerza bruta para descifrar contraseñas, siguiendo reglas predefinidas. Este método intenta 
+todas las combinaciones posibles de caracteres.
+
+-Externo:
+Permite el uso de software externo escrito en C para ejecutar ataques de fuerza bruta. Los ataques se basan en
+las directrices establecidas por el programador en el código externo.
+
+
+
+

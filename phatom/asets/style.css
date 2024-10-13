@@ -1,0 +1,310 @@
+/* Agregamos lo que son nuevas fuentes */
+@font-face {
+    font-family: 'Geist-Black';
+    src: url('./fonts/Geist-Black.otf')
+}
+
+@font-face {
+    font-family: 'Geist-Regular';
+    src: url('./fonts/Geist-Regular.otf')
+}
+
+/* En este primer body ponemos un fondo de color negro */
+body {
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    align-items: center;
+}
+
+/* Poner a las imágenes solo un 5% de su tamaño original */
+img {
+    width: 5%;
+    border-radius: 8px;
+}
+
+/* A todos los selectores de texto plano se les pone tipo de letra y nueva */
+h1,
+h2,
+h3,
+span {
+    font-family: 'Geist-Black';
+    color: rgb(255, 255, 255);
+}
+
+p,
+a,
+li {
+    font-family: 'Geist-Regular';
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.635);
+}
+b{color: white;}
+
+/* Estilos para el header de navegación */
+.nav-1 {
+    background-color: #01404061;
+    text-align: center;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    width: 50%;
+    position: fixed;
+    left: 25%;
+    border-radius: 10px;
+    top: 0;
+    z-index: 3000;
+    box-sizing: border-box;
+}
+
+@media(max-width:1024px) {
+    .nav-1 {
+        padding-top: 1%;
+        padding-bottom: 1.5%;
+    }
+}
+
+.navs-head:hover {
+    color: rgba(255, 255, 255, 0.916);
+}
+
+.navs-head {
+    padding-left: 10%;
+    margin-right: 5%;
+}
+
+.navs-head:last-child {
+    margin-right: 8%;
+}
+
+/* Efecto blur para el div debajo del header */
+#hijo {
+    background-color: rgb(31, 29, 32);
+    text-align: center;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    width: 50%;
+    position: fixed;
+    left: 25%;
+    border-radius: 10px;
+    top: 0;
+    z-index: 1000;
+    filter: blur(1.5rem);
+}
+
+/* Contenedor principal de resent */
+#resent {
+    background-color: #012240bc;
+    width: 60%;
+    margin-left: 20%;
+    padding: 5%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    position: relative;
+    /* Para que la imagen se alinee con flexibilidad */
+    display: flex;
+    justify-content: space-between;
+    /* Asegura que el texto y la imagen estén separados */
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 4px 1px rgba(0, 157, 255, 0.108);
+}
+
+/* Estilos para el título y subtítulos */
+.title-resent {
+    align-items: center;
+    font-size: 100%;
+    width: 70%;
+    background-color:#038ea67c ;
+    border-radius: 5px;
+    padding: 2%;
+    position: relative;
+}
+.title-resent:first-child{
+    left: 1%;
+    width: 50%;
+}
+
+@media(max-width:1024px) {
+    .title-resent {
+        font-size: 150%;
+    }
+}
+
+.title-resent:first-child {
+    font-size: 250%;
+}
+
+@media(max-width:1024px) {
+    .title-resent {
+        font-size: 50%;
+        margin-top: 6%;
+    }
+
+    .title-resent:first-child {
+        font-size: 100%;
+    }
+}
+
+#text-resent {
+    border-right: 5px solid white;
+    border-left: 5px solid white;
+    width: 70%;
+    height: auto;
+    padding: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    box-sizing: border-box;
+    text-align: justify;
+    background-color: #038ea63e ;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 5%;
+    margin-left: 15%;
+    padding-bottom: 3%;
+}
+
+@media(max-width:1024px) {
+    #text-resent {
+        width: 50%;
+        margin-top: 10%;
+        left: 10%;
+    }
+
+    #text-resent p {
+        font-size: 50%;
+    }
+
+    #text-resent h2 {
+        font-size: 70%;
+    }
+}
+
+
+/* Estilos para el main */
+#main {
+    margin-left: 5%;
+    position: relative;
+}
+
+/* Links fijos a la derecha */
+#links-derecha {
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    width: 10%;
+    box-sizing: border-box;
+}
+
+.sepat {
+    margin-top: 12%;
+}
+
+.sepat:hover {
+    width: 110%;
+}
+
+.icons-enlace {
+    width: 25%;
+}
+
+@media(max-width:1024px) {
+    .icons-enlace {
+        width: 45%;
+    }
+}
+
+
+@media(max-width:700px) {
+    .icons-enlace {
+        width: 50%;
+    }
+}
+
+
+body{text-align: center;}
+/*Aqui en ajustamos y disponemos para usar flex en la seccion*/
+#caspre{
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: rgba(67, 76, 96, 0.133);
+    border-radius: 5px;
+    width: 63%;
+    margin-left: 18%;
+    padding: 2%;
+    flex-wrap: nowrap;
+  }
+  .content{
+    background-color: rgba(53, 57, 60, 0.352);
+    width: 16rem;
+    height: 20rem;
+    border-radius: 5px;
+    margin-left: 5%;
+    padding-top: 2%;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Segoe UI';
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  @media(max-width:1024px){.content{
+    height: 40%;
+  }}
+  .set{width: 80%;
+    border-radius: 5%;
+    transition: 0.5s;
+    object-fit: cover;
+  }
+  .set:hover{width: 85%;
+    transform: scale(1.2);
+    margin-bottom: 5%;
+  }
+/* Sección de pasos */
+#Pasos {
+    background-color: rgba(87, 83, 77, 0.202);
+    width: 70%;
+    margin-left: 10%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    margin-top: 2rem;
+    border-radius: 15px;
+}
+
+@media(max-width:1024px) {
+    #Pasos {
+        margin-top: 3rem;
+    }
+}
+
+/* Video de demostración */
+.vide {
+    width: 75%;
+    border-radius: 15px;
+}
+
+/* Estilos para los párrafos dentro de los pasos */
+.parraf-secc-pasos {
+    padding-left: 3%;
+    padding-right: 9%;
+    text-align: justify;
+    border-left: 1px solid rgba(255, 255, 255, 0.211);
+    border-radius: 5px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 90%;
+}
+
+/* Cambiamos el tamaño y centramos las imágenes de los pasos */
+.im-pasos-pe {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 70%;
+}
+.pasos b{ 
+    color: white;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descripción de Comandos</title>
+    <link rel="stylesheet" href="style3.css">
+    <link rel="icon" href="desc.png">
+</head>
+
+<body>
+    <main>
+        <nav>
+            <a href="../index.html"><p>&lt;&lt; Volver</p></a>
+        </nav>
+        <header><b>Descripcion de los comandos mas Importantes</b></header>
+        <section class="h">
+            <h1 >Temas</h1>
+            <ol>
+               <a href="descripcion-comandos.html#johntheripper"> <li>John the Ripper</li></a>
+               <a href="descripcion-comandos.html#nmap"><li>Nmap</li></a>
+            </ol>
+            </section>
+        <section class="section" id="johntheripper">
+            
+            <div class="diro">
+                <h1>
+                    Jhon the Ripper
+                </h1>
+                <img src="johntheriper2.png" alt="">
+                <h2>¿Qué es Jhon the Ripper?</h2>
+                <p>
+                    John The Ripper es una herramienta de código abierto que viene instalada por defecto en el sistema
+                    operativo
+                    Kali Linux y que sirve para descifrar contraseñas de usuarios a partir de sus códigos hash.
+                    Fue creada por Solar Designer y podría decirles que es una de las herramientas para romper
+                    contraseñas de más
+                    alto desempeño y flexibles que existen en la actualidad.</p>
+                <h3>Modos de funcionamiento de John The Ripper</h3>
+                <h4>1. Single crack</h4>
+                <p>En el modo Single Crack, John The Ripper genera combinaciones basadas en el nombre de usuario y su
+                    hash para
+                    compararlo con el hash de la contraseña. Este método es efectivo, ya que muchas personas
+                    utilizan su nombre de usuario o variaciones como contraseña.
+                </p>
+                <h4>Diccionario</h4>
+                <p>Utiliza una lista de palabras predeterminadas, como el famoso RockYou.txt, para intentar crackear
+                    contraseñas.
+                    También se pueden crear listas personalizadas a partir de bases de datos filtradas.
+                </p>
+                <h4>Incremental</h4>
+                <p>
+                    Realiza ataques por fuerza bruta para descifrar contraseñas, siguiendo reglas predefinidas. Este
+                    método intenta
+                    todas las combinaciones posibles de caracteres.
+                </p>
+                <h4>Externo</h4>
+                <p>
+
+                    Permite el uso de software externo escrito en C para ejecutar ataques de fuerza bruta. Los ataques
+                    se basan en
+                    las directrices establecidas por el programador en el código externo.
+                </p>
+            </div>
+        </section>
+        <section id="nmap" class="section">
+            <div class="diro">
+                <h1>
+                    Nmap
+                </h1>
+                <img src="./img-recusos/nmap.jpeg" alt="">
+                <h2>Comandos basicos de Nmap </h2>
+                <h3>1. Escaneo TCP SYN <em>(nmap -sS &lt;IP&gt;)</em>
+                </h3>
+                <p>Realiza un escaneo sigiloso (stealth) enviando paquetes <b>SYN</b>.
+                    Se considera menos detectable porque no completa la conexión <b>TCP</b> . Se usa para
+                    identificar puertos abiertos en un host.
+                </p>
+                <h3>
+                    2. Escaneo TCP CONNECT <em>(nmap -sT &lt;IP&gt;)</em>
+                </h3>
+                <p>
+                    Establece una conexión TCP completa con el objetivo, lo que puede
+                    ser más fácil de detectar. Se utiliza para verificar puertos abiertos y cerrados.
+                </p>
+                <h3>3. Escanear un Rango de IPs <em>(nmap &lt;IP_inicial&gt;-&lt;IP_final&gt;)</em></h3>
+                <p>Permite escanear múltiples direcciones IP en un rango específico.
+                    Útil para identificar hosts activos dentro de una red.
+                </p>
+                <h3>4. Cargar Lista de IPs desde un Archivo <em>(nmap -iL &lt;archivo.txt&gt;)</em></h3>
+                <p>Permite especificar un archivo que contenga una lista de direcciones IP
+                    a escanear. Facilita el escaneo de múltiples objetivos sin tener que escribir
+                    cada IP manualmente.</p>
+                <h3>5. Escanear un Puerto en Específico <em>(nmap -p &lt;puerto&gt;) </em></h3>
+                <p>
+                    Función: Se utiliza para verificar el estado de un puerto específico en un host. Ayuda a
+                    identificar si un servicio en particular está en ejecución.</p>
+                <h3>
+                    7. Escanear 100 Puertos Más Comunes (nmap --top-ports 100 &lt;IP&gt;)</h3>
+                <p>Realiza un escaneo de los 100 puertos más comunes, que son frecuentemente
+                    utilizados por servicios conocidos. Es una forma rápida de obtener información sobre
+                    servicios habituales.</p>
+                <h3>8. Escanear Todos los Puertos (nmap -p- &lt;IP&gt;)</h3>
+                <p>
+                    Función: Escanea todos los 65535 puertos en un host. Proporciona información
+                    exhaustiva sobre los servicios disponibles, pero puede ser más lento y detectado fácilmente.
+                </p>
+                <h3>9. Detección de Servicios y Versiones (nmap -sV &lt;IP&gt;)</h3>
+                <p>Identifica los servicios en ejecución en los puertos abiertos y sus versiones. Esto permite
+                    conocer qué software está corriendo, lo que puede ayudar en la evaluación de vulnerabilidades.</p>
+                <h3>10. Detección de Sistema Operativo (nmap -O &lt;IP&gt;)</h3>
+                <p>Intenta identificar el sistema operativo que está ejecutando el host objetivo. Se basa en la
+                    respuesta a ciertos paquetes y características de red, útil para determinar la plataforma de un
+                    dispositivo.
+
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
