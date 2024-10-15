@@ -273,6 +273,7 @@ body{text-align: center;}
     padding-bottom: 3%;
     margin-top: 2rem;
     border-radius: 15px;
+    margin-bottom: 2%;
 }
 
 @media(max-width:1024px) {
